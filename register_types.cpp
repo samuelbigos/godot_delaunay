@@ -5,10 +5,10 @@
 
 #include "core/class_db.h"
 
-void register_cppdelaunay_types() {
+void register_godot_delaunay_types() {
 	ClassDB::register_class<VoronoiDiagram>();
 }
 
-void unregister_cppdelaunay_types() {
+void unregister_godot_delaunay_types() {
 	// Nothing to do here in this example.
 }
