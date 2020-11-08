@@ -1,0 +1,12 @@
+# SCsub
+
+Import('env')
+Import("env_modules")
+
+env_gdscript = env_modules.Clone()
+
+env_gdscript.Append(CPPPATH=["./"])
+
+env_gdscript.add_source_files(env.modules_sources, "*.cpp")
+env_gdscript.add_source_files(env.modules_sources, "./delaunay/*.cpp")
+env_gdscript.add_source_files(env.modules_sources, "./geom/*.cpp")
